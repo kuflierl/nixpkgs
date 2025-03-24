@@ -7,14 +7,14 @@
 
 buildPythonPackage rec {
   pname = "litemapy";
-  version = "0.7.2b0";
+  version = "0.10.0b0";
   format = "setuptools";
 
   src = fetchFromGitHub {
     owner = "SmylerMC";
     repo = "litemapy";
     rev = "v${version}";
-    hash = "sha256-VfEo/JLeU17bEkvc8oZYfq19RsHl6QvKv0sGZYQjYhE=";
+    hash = "sha256-mGRnrFfrg0VD9pXs0WOuiP6QnYyu0Jbv/bqCWtkOie0=";
   };
 
   propagatedBuildInputs = [ nbtlib ];
